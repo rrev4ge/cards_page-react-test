@@ -8,7 +8,7 @@
     position: relative
     background-color: white
     min-width: 250px
-    min-height: 150px
+    height: 150px
     border-radius: 15px
     box-shadow: 4px 4px 8px 0px rgba(128, 128, 128, 0.6)
 
@@ -24,11 +24,12 @@
             padding-bottom: 1rem
 
 .btnGroup 
-    padding-top: 1.5rem
+    position: absolute
     display: flex
     justify-content: space-between
+    width: calc(100% - 20px)
     bottom: 10px
-    width: 100%
+    margin-right: 5px
 
 button  
     color: green
@@ -50,6 +51,6 @@ button[name="minusBtn"]
     .cardListItem 
         width: 100%
 
-@media screen and (max-device-width: 1440px)
+@media screen and (max-device-width: 1024px)
     .cardListItem 
         width: none

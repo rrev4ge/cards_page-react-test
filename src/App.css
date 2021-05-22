@@ -50,7 +50,7 @@ button {
     }
 }
 
-@media screen and (min-device-width:729px) and (max-device-width:1440px){
+@media screen and (min-device-width:729px) and (max-device-width:1024px){
     .listsContainer {
         width: 75%;
     }
