@@ -1,20 +1,17 @@
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
-import CardList from './components/CardList';
-import CONSTANTS from './CONSTANTS';
+import Home from './pages/Home/index';
 
 function App() {
   return (
-    <>
-      <header>Header</header>
-      <main>
-        <div className="listsContainer">
-          <div>Counters</div>
-          <CardList cardQuantity={CONSTANTS.CARD_QUANTITY} listLabel={"Card"}/>
-        </div>
-      </main>
-      <footer>footer 2021</footer>
-    </>
+    <BrowserRouter basename="/">
+        <Switch>
+            <Route path="/" component={Home}/>
+        </Switch>
+      </BrowserRouter>
   );
 }
 
+
 export default App;
+
